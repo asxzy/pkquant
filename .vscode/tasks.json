@@ -1,0 +1,21 @@
+// https://code.visualstudio.com/docs/editor/tasks
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "Compilebuy_and_hole",
+            "command": "make -f programs/notifyHq/Makefile_WinDebug && make -f programs/notifyHqExe/Makefile_WinDebug",
+            "args": [],
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}
